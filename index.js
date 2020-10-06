@@ -1,5 +1,18 @@
 function sortString(original){
+// split abc into array
+// [a, b, c]
+// Get Array.length
+// for loop have i set to Array.length, then while i >= 0, decrement i
 
+let arr = original.split("")
+let leng = arr.length - 1
+let newArr = []
+
+for(i = leng; i >= 0; i --){
+    console.log(arr[i]);
+    newArr.push(arr[i]);
+}
+return newArr.join("")
 }
 
 
